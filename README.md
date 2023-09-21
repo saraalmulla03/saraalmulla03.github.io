@@ -65,7 +65,7 @@ The color palette consisted of four main colors: purple, blue, green, and pink:
 }
 }
 ```
-#### As for the fonts, I stuck to two basic san-serif fonts and alternated with different weights (thin, regular, bold:
+#### As for the fonts, I stuck to two basic san-serif fonts and alternated with different weights (thin, regular, bold):
 ```
 @font-face {
 font-family: 'SKPayidar';
