@@ -81,7 +81,7 @@ src: url(fonts/RoobertRegular.ttf);
 ```
 They are fairly similar to each other, the only difference is that one has rounded edges, and the other does not.
 
-#### The internal links I implemented are shortcuts that scroll to the designated section for you. To make this process not too visually disruptive in its quickness, I used this code:
+#### The internal links I implemented are shortcuts that scroll to the designated section for you. To make this process not too visually disruptive in its quickness, I used this code in CSS:
 
 ```
 html {
@@ -112,13 +112,27 @@ I did this by using selectors like `.container`, `.slider`, `.slider-wrapper`, e
 Added the short film using `<div>`:
 ```
 <div class="video-container">
-<video id="videoclip" style= "padding-top: 500px; padding-bottom: 150px;" width="1000" controls>
+<video style= "padding-top: 500px; padding-bottom: 150px; padding-left: 250px" width="1000" controls poster="thumbnail.png">
   <source src="MOVIE.mp4" type="video/mp4">
 </video>
     </div>
 ```
 
 ## Reflection/Evaluation (initial vs final concept, expectations, goals, process)
-- problems (use code blocks): spacing, implementing gradient, not knowing that JS code had to be on the bottom of html body, confused with margin/ padding/ border
+I encountered many problems while trying to implement my initial design.
+
+Spacing things out was a nightmare. Every time I wanted to format an element, I had to reconfigure the spacing for everything else. It wasn't until a few days ago that I realized that `display: flex;` allowed the computer to disregard all spacing rules in regards to `margin`/ `padding`/ `border`, which helped me to display text beside a photo carousel and not underneath it:
+
+```
+  #carouseltext {
+display: flex; 
+font-size: 25px; 
+margin-left: 107px; 
+margin-top: -470px;
+}
+```
+
+
+- problems (use code blocks): implementing gradient, separating jss not knowing that JS code had to be on the bottom of html body, confused with margin/ padding/ border
 - What i changed from my wireframes
   
