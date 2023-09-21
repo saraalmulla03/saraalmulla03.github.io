@@ -165,6 +165,6 @@ Another issue I had which stopped me from implementing JS code earlier, is the f
 ```
 
 
-- problems: separating jss not knowing that JS code had to be on the bottom of html body, confused with margin/ padding/ border
+- problems: confused with margin/ padding/ border, internal links not taking you to sections in a centered way
 - What i changed from my wireframes
   
