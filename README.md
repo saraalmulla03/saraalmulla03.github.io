@@ -131,9 +131,40 @@ margin-left: 107px;
 margin-top: -470px;
 }
 ```
+The gradient was also pretty difficult. I used this [tutorial](https://www.youtube.com/watch?v=MxpDrULwejY) to animate the moving circles, and it took me a hot second trying to figure out what each section of code was doing. Neveretheless, I was able to figure it out eventually and change up the colors of the blotches to suit the aesthetic I had in mind.
+
+Size, position, color, and animation of blue circle:
+```
+/* blue side */
+  #up{
+position: absolute;
+height: 750px;
+width: 750px;
+border-radius: 50%;
+background-image:linear-gradient(80deg, rgb(0, 132, 255), rgb(0, 132, 255, 0.5));
+filter: blur(80px);
+animation: down 30s infinite;
+}
+```
+Movement of blue circle:
+```
+@keyframes up{
+0%, 100%{
+	bottom: -100px;	
+}
+70%{
+	bottom: 700px;
+}
+}
+```
+Another issue I had which stopped me from implementing JS code earlier, is the fact that I didn't know that its source link had to be placed just before the closing `</body>` tag in HTML until, again, just a few days ago.
+
+```
+<script src="script.js"></script>
+  </body>
+```
 
 
-
-- problems (use code blocks): implementing gradient, separating jss not knowing that JS code had to be on the bottom of html body, confused with margin/ padding/ border
+- problems: separating jss not knowing that JS code had to be on the bottom of html body, confused with margin/ padding/ border
 - What i changed from my wireframes
   
