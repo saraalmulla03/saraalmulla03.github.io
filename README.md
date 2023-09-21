@@ -118,8 +118,8 @@ Added the short film using `<div>`:
     </div>
 ```
 
-## Reflection/Evaluation (initial vs final concept, expectations, goals, process)
-I encountered many problems while trying to implement my initial design.
+## Reflection/Evaluation (initial vs final concept + issues)
+### I encountered many problems while trying to implement my initial design.
 
 Spacing things out was a nightmare. Every time I wanted to format an element, I had to reconfigure the spacing for everything else. It wasn't until a few days ago that I realized that `display: flex;` allowed the computer to disregard all spacing rules in regards to `margin`/ `padding`/ `border`, which helped me to display text beside a photo carousel and not underneath it:
 
@@ -131,6 +131,7 @@ margin-left: 107px;
 margin-top: -470px;
 }
 ```
+
 
 
 - problems (use code blocks): implementing gradient, separating jss not knowing that JS code had to be on the bottom of html body, confused with margin/ padding/ border
