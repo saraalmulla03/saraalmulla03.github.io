@@ -22,6 +22,11 @@ Section C)
 Section D)
 - Film
 
+Miscellaneous)
+- Cursor
+- Translucent text
+
+
 ### Section A)
 #### I wanted the background to have a very aesthetically pleasing and yet calming effect. 
 I did this by making it fairly simplistic with the gradient effect so that it's not too distracting and visually triggering, while still standing out from the black backdrop and white text with its notable pop of colors.
@@ -118,8 +123,39 @@ Added the short film using `<div>`:
     </div>
 ```
 
+### Miscellaneous)
+I added a circle that follows the cursor using JS.
+```
+// cursor dot
+const cursorDot = document.querySelector("[data-cursor-dot]");
+
+window.addEventListener("mousemove", function (e) {
+  const posX = e.clientX;
+  const posY = e.clientY;
+
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
+
+});
+```
+and made it so that when you hover your cursor over the `ABOUT` header it becomes translucent
+```
+// 'about' header changes opacity when mouse hovers over it
+const aboutLink = document.getElementById("about");
+// when mouse hovers over it, opacity goes to 0.8
+aboutLink.addEventListener("mouseover", () => {
+  aboutLink.style.opacity = "0.8";
+});
+// when the mouse leaves, opacity resets to 1 (opaque)
+aboutLink.addEventListener("mouseout", () => {
+  aboutLink.style.opacity = "1";
+});
+```
+
 ## Reflection/Evaluation (initial vs final concept + issues)
 ### I encountered many problems while trying to implement my initial design.
+![Untitled_Artwork 1](https://github.com/saraalmulla03/saraalmulla03.github.io/assets/144206983/06a42a92-d498-4566-82fe-afddb99bde9e)
+![Untitled_Artwork](https://github.com/saraalmulla03/saraalmulla03.github.io/assets/144206983/4eaf3a21-321d-4835-814f-590dbadccff2)
 
 Spacing things out was a nightmare. Every time I wanted to format an element, I had to reconfigure the spacing for everything else. It wasn't until a few days ago that I realized that `display: flex;` allowed the computer to disregard all spacing rules in regards to `margin`/ `padding`/ `border`, which helped me to display text beside a photo carousel and not underneath it:
 
@@ -164,7 +200,13 @@ Another issue I had which stopped me from implementing JS code earlier, is the f
   </body>
 ```
 
+Finally, an issue which I still haven't been able to resolve, is how to make it so that the internal links for `ABOUT`, `CAROUSEL`, and `VIDEO` take you to the designated section in a centered way. Whenever you click on any of them, it takes you either too far down, or too high up.
 
-- problems: confused with margin/ padding/ border, internal links not taking you to sections in a centered way
-- What i changed from my wireframes
-  
+```
+    <!-- internal links -->
+<a href="#about" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8; ">ABOUT</a>
+<a href="#carouseltext" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">CAROUSEL</a>
+<a href="#film" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">VIDEO</a>
+```
+
+
