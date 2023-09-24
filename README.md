@@ -17,7 +17,6 @@ Section B)
 Section C)
 - Photo carousel
 - Carousel's paragraph of text
-- Color spectrum
 
 Section D)
 - Film
@@ -25,7 +24,6 @@ Section D)
 Miscellaneous)
 - Cursor
 - Translucent text
-
 
 ### Section A)
 #### I wanted the background to have a very aesthetically pleasing and yet calming effect. 
@@ -167,7 +165,7 @@ margin-left: 107px;
 margin-top: -470px;
 }
 ```
-The gradient was also pretty difficult. I used this [tutorial](https://www.youtube.com/watch?v=MxpDrULwejY) to animate the moving circles, and it took me a hot second trying to figure out what each section of code was doing. Neveretheless, I was able to figure it out eventually and change up the colors of the blotches to suit the aesthetic I had in mind.
+The gradient was also pretty difficult. I used this [tutorial](https://www.youtube.com/watch?v=MxpDrULwejY) to animate the moving circles, and it took me a hot second trying to figure out what each section of code was doing. Nevertheless, I was able to figure it out eventually and change up the colors of the blotches to suit the aesthetic I had in mind.
 
 Size, position, color, and animation of blue circle:
 ```
@@ -208,5 +206,6 @@ Finally, an issue which I still haven't been able to resolve, is how to make it 
 <a href="#carouseltext" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">CAROUSEL</a>
 <a href="#film" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">VIDEO</a>
 ```
+### Here is a video demonstration of me scrolling through the website
 
 
