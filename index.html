@@ -1,56 +1,94 @@
-<!-- Start building a web page with HTML and some CSS for your 30MFF World Premiere Site. We'll cover layout more next week, but for now get the main content into the page or pages (if you have more than one) and set up links. Think about what kind of interaction you want to happen. Be prepared to share your progress in class. -->
-
-<html> <!-- index is first page -->
+<html> 
   <head>
-     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Sara's Website</title> <!-- name on tab -->
-  </head>
 
-  <body style="background-color:black; color: white; font-family: Courier;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <title>Invisible Spectrums</title> <!-- name on tab -->
+  </head>
+  <body>
+
+<!-- background gradient design that calls CSS-->
+<section id= "up"></section>
+<section id= "down"></section>
+<section id= "left"></section>
+<section id= "right"></section>
     
     <!-- title -->
-    <p style="font-family: Courier; margin-top: 55px; margin-left: 175px; margin-bottom: -25px; display: inline-block;"><b>student</b> life</p>
-
-    <!-- links -->
-<a href="page1.html" style="display: inline-block; margin-left: 1300px;">Link 1</a>
-<a href="page2.html" style="display: inline-block; margin-left: 1300px;">Link 2</a>
-<a href="page3.html" style="display: inline-block; margin-left: 1300px;">Link 3</a>
-
-  <!-- header + subtitle -->
-    <p style="font-size: 62px; color: white; text-align: center; margin-top: 240px; margin-bottom: -2px">The <strong>Color</strong> of Student Life</p>  <!-- main header -->
+<p id= "title"><span style= "font-family: 'SKPayidarBold'; font-size: 20px;">student</span> life</p>
     
-   
-    <p style="font-size: 20px; text-align: center; margin-top: 5px;"> A study into the visible spectrums on campus</p>  <!-- subtitle of header -->
+    <!-- internal links -->
+<a href="#about" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8; ">ABOUT</a>
+<a href="#carouseltext" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">CAROUSEL</a>
+<a href="#film" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">VIDEO</a>
+
+  <!-- main header + subtitle -->
+    <p id= "header" ><span style= "opacity: .6; font-family: 'SKPayidar'; ">Invisible </span>Spectrums</p>
+
+  <!-- 'down' arrow-->
+    <p><i class="arrow down"></i></p>
+
+<!-- 'about' header + paragraph -->
+<section>
+    <h1><a id="about"> About </a></h1> <!-- 'about' header -->
+    <p id= "one" > I conducted a short video around campus that revolved around the color palettes <br> on campus. The purpose was to display the “color” of student life through <br> architectural elements, scattered objects, hanging posters, natural life, etc., all of <br> which was ordered in a way to make it appear grey-toned and muted in the <br> beginning, and then more saturated near the end with brighter colors like blue,<br> green, yellow, and red making notable features. <!-- 'about' paragraph -->
+    </section>
 
 
-<!-- 
-    <p>I am another <i>paragraph</i> of text.</p>
+<!-- photo carousel -->
+<section class="container">
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img id="slide-1" src="pic1.jpg" alt="Woman in blue skirt walking outdoors" />
+      <img id="slide-2" src="pic2.jpg" alt="Tote bag with teal butterfly design" />
+      <img id="slide-3" src="pic3.jpg" alt="Palm Trees with backdrop of blue sky" />
+      <img id="slide-4" src="pic4.jpg" alt="Yellow sunflowers" />
+      <img id="slide-5" src="pic5.jpg" alt="Bouquets of assorted flowers with red backdrop" />
+    </div>
+    <div class="slider-nav">
+      <a href="#slide-1"></a>
+      <a href="#slide-2"></a>
+      <a href="#slide-3"></a>
+      <a href="#slide-4"></a>
+      <a href="#slide-5"></a>
+    </div>
+  </div>
+</section>
 
-    <ol>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ol>
+  <!-- carousel's text -->
+  <p id= "carouseltext">
+    For the short film, I focused on taking <br>
+    many shots of still and moving life on <br> 
+    on campus. This way, I could arrange <br>
+    them based on color palettes and <br>
+    produce a kind of cohesion and <br>
+    consistency that would be evident in <br> 
+    in the film to portray my story. You <br> 
+    find traces of life in every shot, <br>
+    whether it be architectural art pieces, <br> 
+    the flow of fabric in the wind, or a <br> 
+    bouquet of assorted flowers, there is <br>
+    character in every element that is <br>
+    showcased.
+  </p>
 
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ul>
--->
+<!-- <img id="spectrum" src="spectrum.png" width="1257" height="130" style="display: flex; top: 200px; padding-left: 108px;"/> -->
 
-        <!-- images -->
-    <!-- <img src="rainbow.jpeg" alt-text="what is the image of" width="600" height="315"/>
-    <img src="cat-cat-dance.gif" alt-text="what is the image of" />
-     <img src="https://media.istockphoto.com/photos/european-short-haired-cat-picture-id1072769156?k=20&m=1072769156&s=612x612&w=0&h=k6eFXtE7bpEmR2ns5p3qe_KYh098CVLMz4iKm5OuO6Y=" /> 
-    <!-- image as link -->
-   <!--  <a href="http://duckduckgo.com"><img src="kitty.jpg" alt-text="what is the image of" /></a> -->
+  <!-- video + positioning -->
+<div class="video-container">
+<video id= "film" style= "padding-top: 500px; padding-bottom: 150px; padding-left: 250px" width="1000" controls poster="thumbnail.png">
+  <source src="MOVIE.mp4" type="video/mp4">
+</video>
+    </div>
 
-     <!-- generic -->
-     <!-- <div id="my-unique-id">
-      <!-- <a href="#my-unique-id">internal link</a> -->
-       <!--a genertic division/block in the <span>page</span>
-    </div> -->
-  
+
+<!-- calling cursor code from css and js -->
+<div class="cursor-dot" data-cursor-dot></div>
+
+<!-- LINK TO JAVASCRIPT ALWAYS HAS TO BE IN THE VERY BOTTOM OF BODY!!! -->
+    <script src="script.js"></script> 
+    <!-- In an HTML document, you typically place the JavaScript link just before the closing </body> tag, inside the <body> element. This is a best practice because it ensures that the HTML content is loaded and available before any JavaScript code executes. Placing your JavaScript at the end of the body helps improve page loading performance because the browser can render the page content while simultaneously downloading and parsing the JavaScript.  -->
+
   </body>
 </html>
