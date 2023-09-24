@@ -206,6 +206,4 @@ Finally, an issue which I still haven't been able to resolve, is how to make it 
 <a href="#carouseltext" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">CAROUSEL</a>
 <a href="#film" style="display: inline-block; margin-left: 1300px; font-family: 'Roobert'; font-size: 10px; line-height: 2.3; opacity: .8;">VIDEO</a>
 ```
-### Here is a video demonstration of me scrolling through the website
-
-
+### [Here](https://www.youtube.com/watch?v=PbP1jvic7OE) is a video demonstration of me scrolling through the website
