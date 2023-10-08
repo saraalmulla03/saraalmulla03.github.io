@@ -1,0 +1,114 @@
+html{
+	height: 100%;
+	overflow-x: hidden;
+	font-family: 'Typewriter';
+}
+
+body{
+	height: 100%;
+	margin: 0px;
+}
+
+
+#night, #ocean, #sky, #reef{
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#night{
+	background-image: url('img/night.jpg');
+}
+
+#ocean{
+	background-image: url('img/sunset.jpg');
+}
+
+#sky{
+	background-image: url('img/sky.jpg');
+}
+
+#reef{
+	background-image: url('img/reef.jpg');
+}
+
+#moon-div{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    top: calc(100% - 700px);
+    left: calc(50% - 75px);
+}
+
+#moon{
+	width: 250px;
+	margin-top: 5px;
+}
+
+
+#sun-div{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    top: calc(100% - 750px);
+    left: calc(50% - 132px);
+}
+
+
+#sun{
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+
+.text-section{
+	height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text{
+	width: 70%;
+}
+
+
+
+#balloon-div{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    top: calc(100% - 750px);
+    left: calc(50% - 132px);
+}
+
+
+#balloon{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+#jellyfish-div{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    top: calc(100% - 750px);
+    left: calc(50% - 282px);
+}
+
+
+#jellyfish{
+    width: 550px;
+    display: block;
+    margin: auto;
+}
+
+
+@font-face {
+font-family: 'Typewriter';
+src: url(./SpecialElite-Regular.ttf);
+}
