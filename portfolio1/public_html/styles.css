@@ -10,6 +10,9 @@ src: url(./verizon.otf);
   box-shadow: none !important;
   }
 
+ .contact {
+  box-shadow: none !important;
+  }
 
 /* modifications for image of me */
 .img-thumbnail {
@@ -113,7 +116,7 @@ h7{
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 1;
+    z-index: 1000; /* makes it so that cursor overlays all the elements on the website */
     pointer-events: none;
     animation: changeColor 5s infinite; /* changes color every 5 seconds */
 }
