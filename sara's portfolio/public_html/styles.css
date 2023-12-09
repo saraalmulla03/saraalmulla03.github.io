@@ -1,0 +1,117 @@
+@font-face {
+font-family: 'Century';
+src: url(./verizon.otf);
+}
+
+ .navbar {
+  box-shadow: none !important;
+  }
+
+.img-thumbnail {
+    border: none;  /* removes border from 'about' image */
+    width: 700px;
+    height: auto; 
+  }
+
+ /* font for internal links */
+p, h3 {
+font-family: 'Century';
+}
+
+.contact {
+font-family: 'Century';
+}
+
+a {
+    font-family: 'Helvetica';
+}
+
+
+/* Hello, I'm */
+h1{
+	line-height: 0.2;  /* decreases line height between h1 and h7 */
+	/* letter-spacing: -2px; */
+    font-size: 80px
+}
+
+/* Sara Almulla */
+h7{
+	/* typing effect */
+	display: inline-block;
+	border-right: 15px solid;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	animation:
+	typing 2s steps(12),
+	cursor .4s step-end infinite alternate;
+
+}
+
+
+/* responsive styling for iphone */
+@media only screen and (max-width: 390px) {
+    .subtitle {
+        font-size: 30px; 
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .title1, h1 {
+        font-size: 50px; 
+    }
+
+    .title1 span {
+        font-size: 50px;
+    }
+
+    h7 {
+        border-right: 10px solid;
+        animation: typing 1.5s steps(8), cursor .4s step-end infinite alternate;
+    }
+}
+
+
+
+/* line blinking after typing */
+@keyframes cursor {
+	50% { border-color: transparent; }
+}
+
+ /* typing */
+@keyframes typing {
+	from { width: 0 }
+}
+
+
+   .types_text {
+            text-align: center; /* Center the text */
+            font-weight: bold;
+        }
+
+        .coffee_img {
+            text-align: center; /* Center the image */
+        }
+
+        .coffee_img img {
+            max-width: 100%; /* Make sure the image doesn't exceed its container */
+            height: auto; /* Maintain the aspect ratio */
+            margin-top: 10px; /* Adjust the top margin to control the distance between text and image */
+        }
+
+
+/* dot cursor */
+.cursor-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #efb1ec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
