@@ -104,12 +104,10 @@ h7{
             margin-top: 10px; /* distance between text and image */
         }
 
-
 /* dot cursor */
 .cursor-dot {
     width: 20px;
     height: 20px;
-    background-color: #efb1ec;
     position: fixed;
     top: 0;
     left: 0;
@@ -117,4 +115,18 @@ h7{
     border-radius: 50%;
     z-index: 1;
     pointer-events: none;
+    animation: changeColor 5s infinite; /* changes color every 5 seconds */
 }
+
+@keyframes changeColor {
+    0% {
+        background-color: #efb1ec;
+    }
+    50% {
+        background-color: #ffaa79; 
+    }
+    100% {
+        background-color: #ff787c;
+    }
+}
+
