@@ -1,19 +1,24 @@
-@font-face {
+/* custom font upload */
+@font-face { 
 font-family: 'Century';
 src: url(./verizon.otf);
 }
 
+
+/* removes shadow from internal link bar */
  .navbar {
   box-shadow: none !important;
   }
 
+
+/* modifications for image of me */
 .img-thumbnail {
     border: none;  /* removes border from 'about' image */
     width: 700px;
     height: auto; 
   }
 
- /* font for internal links */
+
 p, h3 {
 font-family: 'Century';
 }
@@ -27,16 +32,17 @@ a {
 }
 
 
+
 /* Hello, I'm */
 h1{
 	line-height: 0.2;  /* decreases line height between h1 and h7 */
-	/* letter-spacing: -2px; */
     font-size: 80px
 }
 
 /* Sara Almulla */
 h7{
 	/* typing effect */
+    /* tutorial: https://youtu.be/yefgBA1CecI?si=UmHzULo5xMf5XG5q */
 	display: inline-block;
 	border-right: 15px solid;
 	width: 100%;
@@ -54,21 +60,17 @@ h7{
     .subtitle {
         font-size: 30px; 
     }
-
     .title {
         font-size: 60px;
     }
-
     .title1, h1 {
         font-size: 50px; 
     }
-
     .title1 span {
         font-size: 50px;
     }
-
     h7 {
-        border-right: 10px solid;
+        border-right: 10px solid; /* styling for typing effect for iphone */
         animation: typing 1.5s steps(8), cursor .4s step-end infinite alternate;
     }
 }
@@ -86,19 +88,20 @@ h7{
 }
 
 
+/* portfolio section */
    .types_text {
-            text-align: center; /* Center the text */
+            text-align: center; /* centers the text */
             font-weight: bold;
         }
 
         .coffee_img {
-            text-align: center; /* Center the image */
+            text-align: center; /* centers the images under the coffee_img class */
         }
 
         .coffee_img img {
-            max-width: 100%; /* Make sure the image doesn't exceed its container */
-            height: auto; /* Maintain the aspect ratio */
-            margin-top: 10px; /* Adjust the top margin to control the distance between text and image */
+            max-width: 100%; /* makes sure the image doesn't exceed its container */
+            height: auto; /* maintains aspect ratio */
+            margin-top: 10px; /* distance between text and image */
         }
 
 
