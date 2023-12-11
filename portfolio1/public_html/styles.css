@@ -5,14 +5,14 @@ src: url(./verizon.otf);
 }
 
 
-/* removes shadow from internal link bar */
+/* removes shadow from internal link bar and contact box */
  .navbar {
   box-shadow: none !important;
   }
-
  .contact {
   box-shadow: none !important;
   }
+
 
 /* modifications for image of me */
 .img-thumbnail {
@@ -22,14 +22,13 @@ src: url(./verizon.otf);
   }
 
 
+/* designated fonts */
 p, h3 {
-font-family: 'Century';
+    font-family: 'Century';
 }
-
 .contact {
-font-family: 'Century';
+    font-family: 'Century';
 }
-
 a {
     font-family: 'Helvetica';
 }
@@ -54,7 +53,15 @@ h7{
 	animation:
 	typing 2s steps(12),
 	cursor .4s step-end infinite alternate;
+}
 
+/* line blinking after typing */
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+ /* typing */
+@keyframes typing {
+    from { width: 0 }
 }
 
 
@@ -79,18 +86,6 @@ h7{
 }
 
 
-
-/* line blinking after typing */
-@keyframes cursor {
-	50% { border-color: transparent; }
-}
-
- /* typing */
-@keyframes typing {
-	from { width: 0 }
-}
-
-
 /* portfolio section */
    .types_text {
             text-align: center; /* centers the text */
@@ -98,7 +93,7 @@ h7{
         }
 
         .coffee_img {
-            text-align: center; /* centers the images under the coffee_img class */
+            text-align: center; /* centers the images under the .coffee_img class */
         }
 
         .coffee_img img {
@@ -106,6 +101,7 @@ h7{
             height: auto; /* maintains aspect ratio */
             margin-top: 10px; /* distance between text and image */
         }
+
 
 /* dot cursor */
 .cursor-dot {
@@ -121,6 +117,8 @@ h7{
     animation: changeColor 5s infinite; /* changes color every 5 seconds */
 }
 
+
+/* color changing effect for cursor */
 @keyframes changeColor {
     0% {
         background-color: #efb1ec;
